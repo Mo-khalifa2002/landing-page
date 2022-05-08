@@ -1,0 +1,34 @@
+.theholeFooter {
+  position: relative;
+  /* margin-bottom: -30rem; */
+}
+.theholeFooter > * {
+  position: absolute;
+}
+.theholeFooter .gmail {
+  font-size: 39px;
+  color: var(--black);
+  font-weight: bold;
+  font-family: sans-serif;
+  /* text-transform: capitalize; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 50%; */
+  position: absolute;
+  /* margin: 0 auto; */
+  margin-left: 40rem;
+  margin-top: 39rem;
+}
+.theholeFooter .iconss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background-color: var(--black);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: var(--boxShadow);
+  margin-top: 45rem;
+  margin-left: 33rem;
+}

@@ -1,0 +1,228 @@
+.all {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  align-self: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+.left {
+  margin-top: 4rem;
+  transition: var(--transition);
+}
+.left:hover {
+  transform: scale(1.05);
+  transform: rotate(360);
+}
+.left h1 {
+  font-family: sans-serif;
+  font-size: 60px;
+  color: var(--black);
+}
+.left h1 span {
+  color: var(--orange);
+}
+.left .par {
+  font-family: system-ui;
+  margin-top: 7px;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+@import url("https://fonts.googleapis.com/css?family=Lato:100&display=swap");
+
+.center {
+  /* width: 180px;
+  height: 60px; */
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--orange);
+  outline: none;
+  transition: 1s ease-in-out;
+  text-align: center;
+}
+#root
+  > div
+  > div:nth-child(2)
+  > div
+  > div.left
+  > div.container
+  > div
+  > button
+  > span {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: rgb(38, 22, 22);
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: var(--yellow);
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: rgb(58, 13, 13);
+  font-size: 18px;
+  font-weight: 100;
+}
+.right {
+  position: relative;
+  /* transition: var(--transition); */
+  /* margin-bottom: 10rem; */
+}
+
+.right .boy {
+  position: absolute;
+  z-index: 5;
+  right: 15rem;
+  transform: scale(1.5);
+  top: 30px;
+}
+.right .glassimojie {
+  position: absolute;
+  right: 40rem;
+  top: -2rem;
+  transition: var(--transition);
+  /* animation: move 2s ease-in-out; */
+}
+/* @keyframes move {
+  from{
+    left: -35%;
+  }
+  to{
+    left: 1%;
+  }
+} */
+.right .glassimojie:hover {
+  transform: scale(1.2);
+}
+.right .vector1 {
+  position: absolute;
+  right: 2rem;
+  transform: scale(0.86);
+  z-index: -1;
+}
+.right .vector2 {
+  position: absolute;
+  right: 2px;
+  transform: scale(0.7);
+  top: -60px;
+}
+
+.right .crown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 7;
+  right: 2rem;
+  top: -1rem;
+  background-color: white;
+  padding: 0px 10px;
+  border-radius: 2rem;
+  gap: 1rem;
+  font-size: 25px;
+  box-shadow: var(--boxShadow);
+  transition: var(--transition);
+}
+.right .crown:hover {
+  border: 2px solid var(--yellow);
+  background-color: var(--blueCard);
+  color: var(--orange);
+  cursor: move;
+  transform: scale(1.1);
+}
+.right .crown img {
+  transform: scale(0.6);
+
+  transition: var(--transition);
+}
+.right .crown img:hover {
+  transform: scale(0.8);
+  transform: rotate(30deg);
+}
+.right .thumsup:hover {
+  border: 2px solid var(--yellow);
+  background-color: var(--blueCard);
+  color: var(--orange);
+  cursor: move;
+  transform: scale(1.1);
+}
+.right .thumsup img {
+  transform: scale(0.6);
+  transition: var(--transition);
+}
+
+.right .crownPar {
+  color: var(--black);
+  margin-left: 5px;
+}
+.right .thumsup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 37rem;
+  top: 20rem;
+  width: 300px;
+  background-color: white;
+  /* padding: 0px 10px; */
+  border-radius: 2rem;
+  gap: 1rem;
+  font-size: 25px;
+  box-shadow: var(--boxShadow);
+  transition: var(--transition);
+}
+.right .thumsup img {
+  transform: scale(0.6);
+  transition: var(--transition);
+}
+.right .thumsup img:hover {
+  transform: scale(0.74);
+  transform: rotate(30deg);
+  overflow: hidden;
+}
+.right .thumsPar {
+  color: var(--black);
+  margin-left: 5px;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 7rem;
+  cursor: pointer;
+}
+.icons img {
+  transition: var(--transition);
+  transform: scale(0.7);
+  z-index: 4;
+}
+.icons img:hover {
+  color: var(--black);
+  background-color: var(--black);
+  padding: 1rem;
+  border-radius: 50%;
+  transform: scale(1.1);
+  overflow: visible;
+}

@@ -1,0 +1,51 @@
+.nums {
+  position: relative;
+  top: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  margin-top: 8rem;
+}
+/* the number button */
+button {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  color: var(--black);
+  /* border-radius: 50%; */
+}
+
+.border-gradient {
+  border-radius: 50%;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to bottom, #5fc2d8, var(--yellow));
+}
+/* the number button */
+.num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.num h2 {
+  font-size: 30px;
+  color: var(--black);
+  font-family: sans-serif;
+  margin-top: 5px;
+}
+.num h2 span {
+  font-size: 30px;
+  color: var(--orange);
+  font-family: sans-serif;
+  margin-top: 5px;
+}

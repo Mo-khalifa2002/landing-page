@@ -1,0 +1,148 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+}
+.navRight h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--black);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.navRight h2:hover {
+  color: var(--orange);
+}
+.navMiddle .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+  list-style: none;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: inherit;
+  transition: var(--transition);
+  color: var(--black);
+}
+@media only screen and (max-width: 1000px) {
+  .navMiddle .middle {
+    display: none;
+  }
+}
+
+.navMiddle .middle li:hover {
+  color: var(--yellow);
+  transform: scale(1.09);
+  cursor: pointer;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  --c: goldenrod;
+  color: darkblue;
+  font-size: 16px;
+  border: 0.2em solid var(--yellow);
+  border-radius: 13px;
+  width: 7em;
+  height: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+nav ul li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--orange);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+nav ul li:hover {
+  color: black;
+}
+
+nav ul li:hover span {
+  transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+  --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+  --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+  --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+  --n: 4;
+}
+
+/* the underline */
+ul {
+  /* margin: 150px auto 0;  */
+  /* padding: 0;  */
+  list-style: none;
+  /* display: table; */
+  /* width: 600px; */
+  /* text-align: center; */
+}
+li {
+  display: table-cell;
+  position: relative;
+  /* padding: 15px 0; */
+}
+li {
+  /* color: #fff; */
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  /* letter-spacing: 0.15em; */
+
+  display: inline-block;
+  /* padding: 15px 20px; */
+  position: relative;
+}
+li:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--orange);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+li:hover:after {
+  width: 100%;
+  left: 0;
+}
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,229 @@
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.leftSer {
+  margin-right: 15rem !important;
+  margin-left: -10rem !important;
+}
+.leftSer h1 {
+  font-size: 59px;
+  color: var(--black);
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.leftSer h1 .spann {
+  font-size: 59px;
+  color: var(--orange);
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.leftSer p {
+  font-size: 17px;
+  margin: 5px 0px;
+  color: var(--gray);
+  margin-top: 7px !important;
+  margin-bottom: 47px !important;
+}
+/* the button */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: -3rem;
+  margin-right: 21rem;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--orange);
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+}
+.button:hover {
+  color: #fff;
+}
+.button:hover:before {
+  width: 100%;
+}
+
+/* the button */
+
+.rightSer {
+  position: relative;
+}
+.rightSer .holeCard {
+  width: 18rem;
+  height: 20rem;
+  margin-bottom: 10rem;
+  border: 10px solid var(--yellow);
+  border-radius: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+.rightSer .holeCard img {
+  transform: scale(0.89);
+  position: absolute;
+  text-align: center;
+  transform: translateX(50%);
+  bottom: 1rem;
+  /* position: relative; */
+  bottom: 10rem;
+  margin-bottom: -2rem;
+}
+.rightSer .card2 img {
+  margin-bottom: 1rem;
+  transform: scale(0.89);
+  position: absolute;
+  text-align: center;
+  transform: translateX(50%);
+  bottom: 1rem;
+  /* position: relative; */
+  bottom: 10rem;
+  /* margin-bottom: -2rem; */
+}
+#root
+  > div
+  > div:nth-child(3)
+  > div
+  > div.rightSer
+  > div:nth-child(2)
+  > div
+  > img {
+  margin-bottom: 1rem !important;
+  transform: scale(0.89) !important;
+  position: absolute !important;
+  text-align: center !important;
+  transform: translateX(50%) !important;
+  bottom: 1rem !important;
+  /* position: relative; */
+  bottom: 10rem !important;
+  /* margin-bottom: -2rem; */
+}
+#root
+  > div
+  > div:nth-child(3)
+  > div
+  > div.rightSer
+  > div:nth-child(2)
+  > div
+  > div
+  > h1 {
+  transform: translateX(50px) !important;
+  position: absolute !important;
+  top: 8rem !important;
+  margin: 0 auto !important;
+  /* transform: translateX(45%) !important; */
+}
+#root
+  > div
+  > div:nth-child(3)
+  > div
+  > div.rightSer
+  > div:nth-child(3)
+  > div
+  > img {
+  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  transform: scale(0.89);
+  position: absolute;
+  text-align: center;
+  transform: translateX(50%);
+  bottom: 1rem;
+  /* position: relative; */
+  bottom: 10rem;
+  /* margin-bottom: -2rem; */
+}
+#root
+  > div
+  > div:nth-child(3)
+  > div
+  > div.rightSer
+  > div:nth-child(3)
+  > div
+  > div
+  > h1 {
+  transform: translateX(70px);
+  position: absolute !important;
+  top: 8rem !important;
+  margin: 0 auto !important;
+}
+.rightSer .card2 h1 {
+  transform: translateX(50px);
+}
+
+.rightSer .holeCard .texts h1 {
+  position: absolute;
+  top: 8rem;
+  margin: 0 auto;
+  transform: translateX(45%);
+}
+.rightSer .holeCard .texts p {
+  position: absolute;
+  top: 11rem;
+  font-size: 16px;
+  color: var(--gray);
+}
+.rightSer .holeCard button {
+  position: absolute;
+  top: 15rem;
+  font-size: 20px;
+  padding: 12px 18px;
+  border: none;
+  background-color: var(--orange);
+  border-radius: 1rem;
+  transform: translateX(35%);
+  color: var(--black);
+  transition: var(--transition);
+}
+.rightSer .holeCard button:hover {
+  background-color: var(--black);
+  color: var(--orange);
+  cursor: pointer;
+}
+#root > div > div:nth-child(3) > div > div.rightSer > div:nth-child(1) > div {
+  position: absolute !important;
+  left: 8rem !important;
+  top: 2rem !important;
+}
+#root > div > div:nth-child(3) > div > div.rightSer > div:nth-child(2) > div {
+  position: absolute !important;
+  margin-bottom: 0 !important;
+  right: 15rem !important;
+  top: 20rem !important;
+}
+#root > div > div:nth-child(3) > div > div.rightSer > div:nth-child(3) > div {
+  margin-bottom: 0;
+  right: -5rem;
+  top: 34rem;
+}

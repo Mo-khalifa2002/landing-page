@@ -1,0 +1,123 @@
+@media screen and (max-width: 1200px) {
+  /* navbar button */
+  #root > div > div:nth-child(1) > div > nav > ul > li {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    right: -5rem;
+  }
+  /* hero section left */
+  #root > div > div:nth-child(2) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7rem;
+  }
+  /* hero section right */
+  #root > div > div:nth-child(2) > div > div.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    left: 53rem;
+    transform: scale(0.8);
+    top: 7rem;
+  }
+  /* services */
+  #root > div > div:nth-child(3) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column;
+    margin-top: 35rem;
+  }
+  /* services left */
+  #root > div > div:nth-child(3) > div > div.leftSer {
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+  }
+  /* services right */
+  #root > div > div:nth-child(3) > div > div.rightSer {
+    display: inline-block;
+    position: relative;
+    left: 5rem;
+    top: 4rem;
+  }
+  /* nums section */
+  #root > div > div:nth-child(4) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    left: 2rem;
+  }
+  /* work section */
+  #root > div > div.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    top: 8rem;
+    margin-left: 1rem;
+  }
+  /* work section left */
+  #root > div > div.work > div.leftSerr {
+    margin-left: 18rem;
+    margin-top: 2rem;
+  }
+  /* the second swiper */
+  #root > div > div:nth-child(8) > div > div > div {
+    margin-right: 13rem;
+  }
+  /* the footer */
+  #root > div > div.theholeFooter {
+    overflow: hidden;
+  }
+}
+/* fixing the photo in the card one */
+#root
+  > div
+  > div:nth-child(3)
+  > div
+  > div.rightSer
+  > div:nth-child(1)
+  > div
+  > img {
+  margin-bottom: 3px;
+  margin-right: 3px !important;
+}
+/* fixing the photo in the card three */
+#root
+  > div
+  > div:nth-child(3)
+  > div
+  > div.rightSer
+  > div:nth-child(3)
+  > div
+  > img {
+  position: absolute;
+  transform: translateX(50px);
+}
+#root > div > div:nth-child(2) > div > div.left {
+  margin-left: 2rem;
+}
+.all {
+  margin-left: 2rem;
+}
+.all .right {
+  margin-left: 2rem !important;
+}

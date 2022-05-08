@@ -1,0 +1,100 @@
+/* rating stars */
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.on {
+  color: var(--orange);
+}
+.off {
+  color: var(--black);
+}
+/* rating stars */
+
+/* testemonials section => the swiper */
+.allSwiper {
+  margin-bottom: -50rem;
+  bottom: 46rem !important;
+  /* margin: 2rem; */
+  left: 15rem !important;
+  border: 5px rgba(28, 110, 164, 0.94);
+  border-radius: 0px 40px 0px 40px;
+  position: relative;
+  width: 70%;
+  height: 400px;
+  padding: 1rem;
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  /* background-color: rgb(215, 209, 209); */
+}
+.theSwiper {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  /* background-color: rgb(215, 209, 209); */
+}
+.theSwiper img {
+  width: 34%;
+  position: absolute;
+  transform: scale(0.5);
+  border-radius: 0% 50%;
+  height: 50%;
+  bottom: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--boxShadow);
+}
+.slid .textandstar p {
+  font-size: 20px;
+  width: 70%;
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.slide .textandstar .stars {
+  font-size: 30px;
+  display: inline-block;
+}
+/* pagination*/
+#root
+  > div
+  > div:nth-child(8)
+  > div
+  > div
+  > div
+  > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: inline-block;
+  transform: scale(1.7);
+  color: var(--orange);
+  bottom: 4rem;
+}
+.testemonials h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -6rem;
+}
+.testemonials h1 span {
+  font-size: 40px;
+  text-transform: capitalize;
+  color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* testemonials section => the swiper */
