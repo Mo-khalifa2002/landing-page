@@ -227,3 +227,29 @@ a {
   right: -5rem;
   top: 34rem;
 }
+
+
+@media only screen and (max-width: 1300px) {
+  .services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column !important;
+  }
+  .leftSer{
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    display:inline-block !important;
+    margin-left: 44rem !important;
+    margin-top: 8rem !important;
+    margin-bottom: -9rem!important;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .rightSer{
+    display: none;
+  }
+}

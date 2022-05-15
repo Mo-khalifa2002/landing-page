@@ -32,3 +32,9 @@
   margin-top: 45rem;
   margin-left: 33rem;
 }
+
+@media only screen and (max-width: 1200px) {
+ .theholeFooter{
+   display: none;
+ }
+}

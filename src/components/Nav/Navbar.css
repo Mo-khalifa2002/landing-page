@@ -1,8 +1,16 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 5px;
+  /* padding: 5px; */
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+  background-color: rgba(255, 255, 255);
+  padding-bottom: -1rem !important;
 }
 .navRight h2 {
   font-size: 28px;

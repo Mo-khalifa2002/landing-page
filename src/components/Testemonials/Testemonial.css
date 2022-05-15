@@ -98,3 +98,18 @@ button {
 }
 
 /* testemonials section => the swiper */
+
+@media only screen and (max-width: 1200px) {
+  .theSwiper, .allSwiper {
+    display: inline-block !important;
+    margin: 0 auto !important;
+    top: 10rem !important;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .theSwiper, .allSwiper {
+    display: inline-block !important;
+    margin: 0 auto !important;
+    top: 10rem !important;
+  }
+}
