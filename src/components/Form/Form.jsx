@@ -1,33 +1,8 @@
 import "./Form.css";
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
 
 const Form = () => {
-  // email js
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_tcifsg9",
-        "template_xgxjmlg",
-        form.current,
-        "iOgV3RCjltuusWhTq"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    //to reset the form after sending
-    e.target.reset();
-  };
-
+  
   return (
     <div>
       <div className="background">
